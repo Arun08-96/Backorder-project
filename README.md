@@ -52,7 +52,19 @@ Challenges and risks
 * The second challenge is optimizing for the business case. To do so, we could explore cutoff (threshold) optimization which can be used to find the cutoff that maximizes expected profit.
 
 
-`Model Building and Hyperparameter Tuning`.
-* Decision tree was used to build the model and achieved a base accuracy score of 92% with a precision
+Model Building and Hyperparameter Tuning.
+* Decision tree was used to build the model and achieved a base accuracy score of 92% with a f1 score of 0.92 for negative class and f1 score of 0.93 for positive class.
+* After Hyperparameter Tuning,the base accuracy score has improved to 94% with a f1 score of 0.95 for both the positive and negative classes.
+
+
+Metrics:
+* `True Positivies(TP)` : Model correctly predicted that the product will go backorder and the customer needs this now.The benefit is profit.
+
+* `True Negative (TN)` : Model correctly predicted that the product will not go backorder and the benefit is zero because
+  the customer doesn't buy the product.
+  
+* `False Positivies(FP)` : Model incorrectly predicted that the product will go backorder,this is classifying a product as backordered when the demand is not present and it will increase the warehousing and inventory related cost
+
+* `False Negative (FN)` : Model incorrectly predicted that the product will not go backorder when the demand is present.This will lead to customer loss.
 
 
