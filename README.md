@@ -4,6 +4,8 @@ Backorder means order for any good or service which cannot be fulfilled due to l
 
 On a positive note,backorders indicate a healthy demand for the product.In the case of Apple,customers are likely to wait for several months to get the latest apple products but apple's competitors doesn't have this luxury.Customers will cancel their orders and go somewhere else. Machine learning can identify patterns related to backorders before customer orders.
 
+
+
 DATA _The data comes from dataset: Kaggle’s Can You Predict Product Backorders? _ The data file contains the historical data for the 8 weeks prior to the week we are trying to predict. The data were taken as weekly snapshots at the start of each week. The target (or response) is the went_on_backorder variable. To model and predict the target, we’ll use the other features, which include:
 
 sku – Random ID for the product
