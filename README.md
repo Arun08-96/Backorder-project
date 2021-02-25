@@ -68,3 +68,9 @@ Metrics:
 * `False Negative (FN)` : Model incorrectly predicted that the product will not go backorder when the demand is present.This will lead to customer loss.
 
 
+ROC Curve The Receiver Operating Characteristic (ROC) curve is a graphical method that measures the true positive rate (y-axis) against the false positive rate (x-axis). The benefit to the ROC curve:
+
+We can visualize how the binary classification model compares to randomly guessing
+We can calculate AUC (Area Under the Curve), which is a method to compare models (perfect classification = 1). We could use the ROC curve and pick a threshold for classification that corresponds to the point on the line for our desired balance between the true positive rate and false positive rate.
+
+
