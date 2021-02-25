@@ -31,3 +31,28 @@ DATA _The data comes from dataset: Kaggle’s Can You Predict Product Backorders
 * stop_auto_buy – Part risk flag
 * rev_stop – Part risk flag
 * went_on_backorder – Product actually went on backorder. This is the target value.
+
+
+
+Data Preprocessing
+* Data is imbalanced.
+* Imputed missing values using median in the columns lead time and source performance.
+* Categorical binary attributes have been converted to numerical attributes(Yes/No to 1/0).
+* Drop unused levels(current inventory level has negative values,this may be due to some errors).
+* Checked for correlation and some columns are correlated with each other.
+
+
+Statistical tests
+* Two-sample t-test was applied to check whether the avg lead_time of products not resulting in backorders is equal to avg lead_time of products resulting in backorders.
+* Two-sample t-test was applied to check whether the avg current inventory level of products not resulting in backorders is equal to avg current inventory level of products resulting in backorders.
+
+
+Challenges and risks
+* The challenge is with this problem is that the data is imbalanced,when the majority class significantly outweighs the minorty class(class we are interestd in,that's positive class). To deal with this class imbalance, SMOTE(synthetic minority over-sampling technique) was used which oversamples the minority class by generating synthetic minority examples in the neighborhood of observed ones.
+* The second challenge is optimizing for the business case. To do so, we could explore cutoff (threshold) optimization which can be used to find the cutoff that maximizes expected profit.
+
+
+Model Building and Hyperparameter Tuning.
+Decision tree was used to build the model and achieved a base score of 92%
+
+
