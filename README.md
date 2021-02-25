@@ -52,7 +52,7 @@ Challenges and risks
 * The second challenge is optimizing for the business case. To do so, we could explore cutoff (threshold) optimization which can be used to find the cutoff that maximizes expected profit.
 
 
-Model Building and Hyperparameter Tuning.
-Decision tree was used to build the model and achieved a base score of 92%
+`Model Building and Hyperparameter Tuning`.
+* Decision tree was used to build the model and achieved a base accuracy score of 92% with a precision
 
 
